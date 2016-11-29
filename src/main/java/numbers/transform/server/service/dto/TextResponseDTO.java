@@ -12,7 +12,7 @@ package numbers.transform.server.service.dto;
 public class TextResponseDTO {
     
     private String value;
-
+    
     public String getValue() {
         return value;
     }

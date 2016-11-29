@@ -27,7 +27,7 @@ public class ThreeNumbersValidatorController {
     @Autowired
     private NumbersTextValidatorService numbersTextValidatorService;
     
-    @RequestMapping(value = "/validate/three-numbers", produces = {MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.POST)
+    @RequestMapping(value = "/validate/three-numbers", produces = {MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.GET)
     public @ResponseBody List<ValidationErrorDTO> validate(@RequestBody String text) {
         return numbersTextValidatorService.validate(text);
     }

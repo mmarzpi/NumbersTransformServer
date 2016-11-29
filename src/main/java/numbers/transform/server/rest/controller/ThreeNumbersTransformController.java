@@ -26,7 +26,7 @@ public class ThreeNumbersTransformController {
     @Autowired
     NumbersTextTransformService numbersTransformService;
     
-    @RequestMapping(value = "/transform/three-numbers", produces = {MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.POST)
+    @RequestMapping(value = "/transform/three-numbers", produces = {MediaType.APPLICATION_JSON_VALUE}, method = RequestMethod.GET)
     public TextResponseDTO transformInput(@RequestBody String text) {
         return numbersTransformService.transform(text);
     }
